@@ -52,6 +52,9 @@ public class linkedldelpos {
                     for(int i=1;i<pos-1;i++)
                         temp = temp.next;
                     temp.next = temp.next.next;
+                    if(temp.next==null){
+                        tail = temp;
+                    }
                 }
             }
         }
